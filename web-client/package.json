@@ -1,16 +1,24 @@
 {
   "name": "web-client-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web client interface for Thermal Camera based on ESP32 and MLX90640",
   "license": "MIT",
-  "author": "",
+  "author": "Michal Janiszewski",
   "type": "commonjs",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "dev": "http-server -p 8000",
+    "dev": "nodemon --inspect ./server.js",
+    "build": "webpack --config ./webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "@fastify/static": "^8.3.0",
+    "@fastify/websocket": "^11.2.0",
+    "fastify": "^5.6.2",
+    "html-webpack-plugin": "^5.6.5",
+    "nodemon": "^3.1.11",
+    "terser-webpack-plugin": "^5.3.16",
+    "webpack": "^5.104.0",
+    "webpack-cli": "^6.0.1"
   }
 }
