@@ -15,7 +15,7 @@ It utilizes websockets for communication, and in case of failure it pulls data v
 
 # Current features
 
-- 4Hz refresh rate, aorund 4 frames per second
+- 4Hz refresh rate, around 4-5 frames per second
 - Web interface with video stream and basic options
 - It shows min and max temperatures registered on the screen
 - Basic color palettes to choose, based on popular ones found in some industry cameras like: Rainbow, White Hot, Fusion-like, etc.
