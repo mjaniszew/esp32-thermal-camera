@@ -18,7 +18,7 @@ It utilizes websockets for communication, and in case of failure it pulls data v
 - 4Hz refresh rate, should produce up to 4 frames per second over websocket connection
 - Web interface with video stream and basic options
 - It shows min and max temperatures registered on the screen
-- Basic color palettes to choose, based on popular ones found in some industry cameras like: Rainbow, White Hot, Fusion-like, etc.
+- Basic color palettes to choose, based on popular ones found in some industry cameras like: Rainbow, White Hot, Iron-like, etc.
 
 # Modules/libs used
 
@@ -32,5 +32,5 @@ It utilizes websockets for communication, and in case of failure it pulls data v
 - Add `src/secrets.h` file with your WiFi credentials
 - Bu default Web interface is served on `192.168.4.1` when connected to ESP32 AP. You can change this in `src/main.cpp`
 - Web client with dummy data server can be found in `./web-client` folder
-- After modifying client in `./web-client/index.html`, it's required to move it's code and html (full or minimized) into `main.cpp` to be served. There's build taks which will minimize it for production
+- After modifying client in `./web-client/src/index.html`, it's required to move its code and html (full or minimized) into `main.cpp` to be served on project build. There's build task which will minimize it for production
 - Compile for ESP32 Dev Kit board, even if other ESP32 with WiFi is being used for final device
