@@ -75,8 +75,8 @@ void sendDataToWsClients() {
 void setup() {
     Serial.begin(115200);
 
-    // Setup MCU90640 thermal camera sensor with deafault I2C pins
-    Serial.println("Setting up MCU90640 thermal sensor...");
+    // Setup MLX90640 thermal camera sensor with deafault I2C pins
+    Serial.println("Setting up MLX90640 thermal sensor...");
     Wire.begin();
     mlx.begin(MLX90640_I2CADDR_DEFAULT, &Wire);
     mlx.setMode(MLX90640_INTERLEAVED);
