@@ -7,7 +7,7 @@ Uses ESP32 with Wifi and `GY-MLX90640` or similar thermal camera working on `I2C
 
 It serves WiFi Access Point, and serves simple web interface where you can see video stream from the camera eg. on your mobile phone.
 
-Resolution and refresh rate are low due to `MLX90640` limitations, but used interpolation improves image quality, although it's enough for simple use cases like checking heat leaks at home.
+Resolution and refresh rate are low due to `MLX90640` limitations, although used interpolation improves image quality and it's enough for simple use cases like checking heat leaks at home.
 
 ![Web Interface Preview](preview.jpg)
 
